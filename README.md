@@ -24,7 +24,18 @@ Welcome to the **Mood Tracker App**! 🎉 An intuitive and engaging mobile appli
 
 ## 📸 Screenshots
 
-*(Add screenshots of your app here to showcase its features and UI.)*
+- Onboarding Screen Shots
+![Simulator Screenshot - iPhone 16 Pro - 2025-01-05 at 23 49 21](https://github.com/user-attachments/assets/b917b089-ed69-4460-8789-4f9485d68565)
+![Simulator Screenshot - iPhone 16 Pro - 2025-01-05 at 23 49 16](https://github.com/user-attachments/assets/0b233d97-4f77-4109-a6e0-e8fb3230b57e)
+![Simulator Screenshot - iPhone 16 Pro - 2025-01-05 at 23 49 09](https://github.com/user-attachments/assets/bded3aeb-ac8c-4b44-bd48-c0c26c9bf174)
+
+Dashboard Screen shot
+![Simulator Screenshot - iPhone 16 Pro - 2025-01-05 at 23 27 39](https://github.com/user-attachments/assets/3c502298-e040-43c0-8721-729bc939630d)
+
+Journal Page
+![Simulator Screenshot - iPhone 16 Pro - 2025-01-05 at 23 49 28](https://github.com/user-attachments/assets/a04709fe-f0d3-4ee7-8ed7-40afcee33091)
+
+
 
 ---
 
