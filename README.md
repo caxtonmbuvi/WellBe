@@ -8,7 +8,7 @@
 
 Welcome to the **Mood Tracker App**! 🎉 An intuitive and engaging mobile application designed to help you monitor your daily moods, track your wearable data, and journal your thoughts—all in one place. Whether you're looking to gain insights into your emotional well-being or simply want a convenient way to record your day, Mood Tracker has got you covered!
 
-![App Screenshot](https://via.placeholder.com/800x400.png?text=Mood+Tracker+App+Screenshot)
+![App Screenshot]((https://github.com/user-attachments/assets/8fe77f94-25f4-4176-82eb-b38caaec8667))
 
 ---
 
