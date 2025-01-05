@@ -8,7 +8,7 @@
 
 Welcome to the **Mood Tracker App**! 🎉 An intuitive and engaging mobile application designed to help you monitor your daily moods, track your wearable data, and journal your thoughts—all in one place. Whether you're looking to gain insights into your emotional well-being or simply want a convenient way to record your day, Mood Tracker has got you covered!
 
-<img src="![Simulator Screenshot - iPhone 16 Pro - 2025-01-05 at 23 27 39](https://github.com/user-attachments/assets/3c502298-e040-43c0-8721-729bc939630d)" alt="App Screenshot" width="600" height="300" />
+<img src="https://github.com/user-attachments/assets/3c502298-e040-43c0-8721-729bc939630d" alt="App Screenshot" width="350" height="800" />
 
 ## 🚀 Features
 
@@ -24,15 +24,19 @@ Welcome to the **Mood Tracker App**! 🎉 An intuitive and engaging mobile appli
 ## 📸 Screenshots
 
 - Onboarding Screen Shots
-![Simulator Screenshot - iPhone 16 Pro - 2025-01-05 at 23 49 21](https://github.com/user-attachments/assets/b917b089-ed69-4460-8789-4f9485d68565)
-![Simulator Screenshot - iPhone 16 Pro - 2025-01-05 at 23 49 16](https://github.com/user-attachments/assets/0b233d97-4f77-4109-a6e0-e8fb3230b57e)
-![Simulator Screenshot - iPhone 16 Pro - 2025-01-05 at 23 49 09](https://github.com/user-attachments/assets/bded3aeb-ac8c-4b44-bd48-c0c26c9bf174)
+<img src="https://github.com/user-attachments/assets/b917b089-ed69-4460-8789-4f9485d68565" alt="App Screenshot" width="200" height="500" />
+
+<img src="https://github.com/user-attachments/assets/0b233d97-4f77-4109-a6e0-e8fb3230b57e" alt="App Screenshot" width="200" height="500" />
+
+<img src="https://github.com/user-attachments/assets/bded3aeb-ac8c-4b44-bd48-c0c26c9bf174" alt="App Screenshot" width="200" height="500" />
 
 Dashboard Screen shot
-![Simulator Screenshot - iPhone 16 Pro - 2025-01-05 at 23 27 39](https://github.com/user-attachments/assets/3c502298-e040-43c0-8721-729bc939630d)
+
+<img src="https://github.com/user-attachments/assets/3c502298-e040-43c0-8721-729bc939630d" alt="App Screenshot" width="350" height="800" />
 
 Journal Page
-![Simulator Screenshot - iPhone 16 Pro - 2025-01-05 at 23 49 28](https://github.com/user-attachments/assets/a04709fe-f0d3-4ee7-8ed7-40afcee33091)
+
+<img src="https://github.com/user-attachments/assets/a04709fe-f0d3-4ee7-8ed7-40afcee33091" alt="App Screenshot" width="350" height="800" />
 
 
 
@@ -131,36 +135,74 @@ Before you begin, ensure you have met the following requirements:
    - Here’s an overview of the project’s directory structure:
      ```bash
       mood_tracker_app/
-      ├── assets/
-      │   ├── fake_moods.json
-      │   ├── motivational_messages.json
-      │   └── wearable_data.json
-      ├── lib/
-      │   ├── data/
-      │   │   ├── models/
-      │   │   │   ├── mood_model.dart
-      │   │   │   └── wearable_data_model.dart
-      │   │   └── repositories/
-      │   │       ├── mood_repository.dart
-      │   │       └── wearable_repository.dart
-      │   ├── logic/
-      │   │   ├── cubits/
-      │   │   │   ├── dashboard_cubit/
-      │   │   │   │   ├── dashboard_cubit.dart
-      │   │   │   │   └── dashboard_state.dart
-      │   │   │   └── wearable_cubit/
-      │   │   │       ├── wearable_cubit.dart
-      │   │   │       └── wearable_state.dart
-      │   ├── presentation/
-      │   │   └── dashboard/
-      │   │       ├── dashboard_screen.dart
-      │   │       └── add_mood_sheet.dart
-      │   ├── utils/
-      │   │   └── models/
-      │   │       └── result.dart
-      │   └── main.dart
-      ├── pubspec.yaml
-      └── README.md
+	├── assets/
+	│   ├── fake_moods.json
+	│   ├── motivational_messages.json
+	│   └── wearable_data.json
+	├── lib/
+	│   ├── features/
+	│   │   ├── dashboard/
+	│   │   │   ├── models/
+	│   │   │   │   ├── mood_model.dart
+	│   │   │   │   └── wearable_data_model.dart
+	│   │   │   ├── cubit/
+	│   │   │   │   ├── dashboard_cubit.dart
+	│   │   │   │   └── dashboard_state.dart
+	│   │   │   ├── ui/
+	│   │   │   │   ├── dashboard_screen.dart
+	│   │   │   │   └── add_mood_sheet.dart
+	│   │   │   └── repo/
+	│   │   │       └── mood_repository.dart
+	│   │   ├── journal/
+	│   │   │   ├── models/
+	│   │   │   │   ├── journal_entry.dart
+	│   │   │   │   └── journal_loaded_data.dart
+	│   │   │   ├── cubit/
+	│   │   │   │   ├── journal_cubit.dart
+	│   │   │   │   └── journal_state.dart
+	│   │   │   ├── ui/
+	│   │   │   │   ├── journal_screen.dart
+	│   │   │   │   └── add_journal_entry_sheet.dart
+	│   │   │   └── repo/
+	│   │   │       └── journal_repository.dart
+	│   │   ├── mood/
+	│   │   │   ├── models/
+	│   │   │   │   └── mood_model.dart
+	│   │   │   ├── cubit/
+	│   │   │   │   ├── mood_cubit.dart
+	│   │   │   │   └── mood_state.dart
+	│   │   │   ├── ui/
+	│   │   │   │   ├── mood_screen.dart
+	│   │   │   │   └── add_mood_sheet.dart
+	│   │   │   └── repo/
+	│   │   │       └── mood_repository.dart
+	│   │   ├── onboarding/
+	│   │   │   ├── models/
+	│   │   │   │   └── onboarding_model.dart
+	│   │   │   ├── cubit/
+	│   │   │   │   ├── onboarding_cubit.dart
+	│   │   │   │   └── onboarding_state.dart
+	│   │   │   ├── ui/
+	│   │   │   │   └── onboarding_screen.dart
+	│   │   │   └── repo/
+	│   │   │       └── onboarding_repository.dart
+	│   │   └── wearable/
+	│   │       ├── models/
+	│   │       │   └── wearable_data_model.dart
+	│   │       ├── cubit/
+	│   │       │   ├── wearable_cubit.dart
+	│   │       │   └── wearable_state.dart
+	│   │       ├── ui/
+	│   │       │   ├── wearable_screen.dart
+	│   │       │   └── update_wearable_data_sheet.dart
+	│   │       └── repo/
+	│   │           └── wearable_repository.dart
+	│   ├── utils/
+	│   │   └── models/
+	│   │       └── result.dart
+	│   └── main.dart
+	├── pubspec.yaml
+	└── README.md
 
 
 
